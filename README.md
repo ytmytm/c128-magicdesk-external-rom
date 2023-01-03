@@ -3,7 +3,7 @@
 This is a clone of [Magic Desk 512k](https://github.com/msolajic/c64-magic-desk-512k) by Marko Šolajić
 converted to KiCad 6 format and modified to work as an External ROM cartridge for C128 and map 32K of ROM at a time.
 
-<img src="media/c128-magicdesk.jpg alt="C128 External Function ROM cartridge" width=640>
+<img src="media/c128-magicdesk.jpg" alt="C128 External Function ROM cartridge" width=640>
 
 There is another project [Magic Desk 128](https://github.com/RetroNynjah/Magic-Desk-128) with a similar goal, but it uses only `/ROML` signal and maps 16K at a time.
 This makes it impossible e.g. to put The Servant on such cartridge.
