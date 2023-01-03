@@ -20,9 +20,7 @@ Because the bank size is now 32K instead of 8K the lowest two bits of control re
 
 [kicad](kicad/) folder contains all the KiCad 6.0 project files and [kicad/plots](kicad/plots) all the Gerber files needed to produce PCB.
 
-Please read the notes from the [original project](https://github.com/msolajic/c64-magic-desk-512k).
-
-The jumper configuration for various EPROMS/EEPROMS/FLASH chips is exactly the same, as well as possible expanstion to 1MB.
+Please read the notes from the [original project](https://github.com/msolajic/c64-magic-desk-512k). The jumper configuration for various EPROMS/EEPROMS/FLASH chips is exactly the same, as well as possible expansion to 1MB.
 
 ## Programming
 
