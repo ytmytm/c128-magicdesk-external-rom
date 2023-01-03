@@ -8,13 +8,18 @@ converted to KiCad 6 format and modified to work as an External ROM cartridge fo
 There is another project [Magic Desk 128](https://github.com/RetroNynjah/Magic-Desk-128) with a similar goal, but it uses only `/ROML` signal and maps 16K at a time.
 This makes it impossible e.g. to put The Servant on such cartridge.
 
+## Why
+
+It just seems much more useful in C128 mode to have whole 32K available - just like Internal Function ROM, but easily switched.
+Since MMU can bank in/out both 16K halves ($8000-$BFFF) and ($C000-$FFFF) separately it seems that e.g. GEOS 128 could run directly from ROM bypassing any boot or loading parts.
+
 ## Hardware
 
 The [schematic is here](kicad/plots/c128-magicdesk.pdf).
 
 The main difference to C64 version is that this cartridge is meant for C128, so `/EXROM` signal is no longer connected to prevent from entering C64 mode automatically.
 
-Two diodes and a pullup resistor perfrom AND function on `/ROML` and `/ROMH` to map whole 32K at a time ($8000-$FFFF).
+Two diodes and a pullup resistor perform AND function on `/ROML` and `/ROMH` to map 32K at a time ($8000-$FFFF).
 
 Because the bank size is now 32K instead of 8K the lowest two bits of control register are not connected.
 
@@ -46,7 +51,7 @@ Reading from $DE00 register will switch bank to a random value (what happened to
 
 ## Cartrige ROM generator
 
-No such thing yet.
+No such thing yet. You can put The Servant on it.
 
 ## Emulator Support
 
