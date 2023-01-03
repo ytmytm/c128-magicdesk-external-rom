@@ -5,8 +5,8 @@ converted to KiCad 6 format and modified to work as an External ROM cartridge fo
 
 <img src="media/c128-magicdesk.jpg" alt="C128 External Function ROM cartridge" width=640>
 
-There is another project [Magic Desk 128](https://github.com/RetroNynjah/Magic-Desk-128) with a similar goal, but it uses only `/ROML` signal and maps 16K at a time.
-This makes it impossible e.g. to put The Servant on such cartridge.
+There are two projects [Magic Desk 128](https://github.com/RetroNynjah/Magic-Desk-128) and [Gmod2 (128)](https://www.freepascal.org/~daniel/gmod2/)
+with a similar goal, but both map only 16K at a time. This makes it impossible e.g. to put The Servant on such cartridge.
 
 ## Why
 
@@ -53,6 +53,12 @@ Reading from $DE00 register will switch bank to a random value (what happened to
 
 No such thing yet. You can put The Servant on it.
 
+It shouldn't be too hard to modify [Magic cartridge generator](https://bitbucket.org/zzarko/magic-cartridge-generator/src/main/) to support 32K banks.
+
+A simple code snippet for a true C128 cartridge (internal/external function ROM) code to load and start BASIC program can be found on [World of Jani page](http://blog.worldofjani.com/?p=1600).
+
+[Gmod2 Commodore 128 technical manual](https://www.freepascal.org/~daniel/gmod2/gmod2-c128.pdf) is also a useful resource.
+
 ## Emulator Support
 
-None :)
+None yet :)
