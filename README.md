@@ -51,13 +51,13 @@ Reading from $DE00 register will switch bank to a random value (what happened to
 
 ## Cartrige ROM generator
 
-No such thing yet. You can put The Servant on it.
-
-It shouldn't be too hard to modify [Magic cartridge generator](https://bitbucket.org/zzarko/magic-cartridge-generator/src/main/) to support 32K banks.
+This forked and modified version of the [Magic cartridge generator](https://bitbucket.org/ytmytm/magic-cartridge-generator/src/feature-c128-extfunctionrom-32k/) supports 32K banks, use `-832` option instead of `-8` when building ROM image.
 
 A simple code snippet for a true C128 cartridge (internal/external function ROM) code to load and start BASIC program can be found on [World of Jani page](http://blog.worldofjani.com/?p=1600).
 
 [Gmod2 Commodore 128 technical manual](https://www.freepascal.org/~daniel/gmod2/gmod2-c128.pdf) is also a useful resource.
+
+You can also put The Servant on it
 
 ## Emulator Support
 
