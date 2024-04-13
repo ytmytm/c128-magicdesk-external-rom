@@ -3,9 +3,15 @@
 This is a clone of [Magic Desk 512k](https://github.com/msolajic/c64-magic-desk-512k) by Marko Šolajić
 converted to KiCad 6 format and modified to work as an External ROM cartridge for C128 and map 32K of ROM at a time.
 
+It is supported by [Magic cartridge generator](https://bitbucket.org/zzarko/magic-cartridge-generator/src/main/).
+
 <img src="media/c128-magicdesk.jpg" alt="C128 External Function ROM cartridge" width=640>
 
-There are two projects [Magic Desk 128](https://github.com/RetroNynjah/Magic-Desk-128) and [Gmod2 (128)](https://www.freepascal.org/~daniel/gmod2/)
+<a href="https://www.pcbway.com/project/shareproject/MagicDesk_like_External_ROM_cartridge_for_C128_43b0904b.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+
+## Other options
+
+There are two other projects [Magic Desk 128](https://github.com/RetroNynjah/Magic-Desk-128) and [Gmod2 (128)](https://www.freepascal.org/~daniel/gmod2/)
 with a similar goal, but both map only 16K at a time. This makes it impossible e.g. to put The Servant on such cartridge.
 
 ## Why
@@ -51,13 +57,13 @@ Reading from $DE00 register will switch bank to a random value (what happened to
 
 ## Cartrige ROM generator
 
-This forked and modified version of the [Magic cartridge generator](https://bitbucket.org/ytmytm/magic-cartridge-generator/src/feature-c128-extfunctionrom-32k/) supports 32K banks, use `-832` option instead of `-8` when building ROM image.
+[Magic cartridge generator](https://bitbucket.org/zzarko/magic-cartridge-generator/src/main/) supports 32K banks, use `-832` option instead of `-8` when building ROM image.
 
 A simple code snippet for a true C128 cartridge (internal/external function ROM) code to load and start BASIC program can be found on [World of Jani page](http://blog.worldofjani.com/?p=1600).
 
 [Gmod2 Commodore 128 technical manual](https://www.freepascal.org/~daniel/gmod2/gmod2-c128.pdf) is also a useful resource.
 
-You can also put The Servant on it
+You can also put The Servant on it. Preferably [the updated one that supports SD2IEC subdirectories and disk images](https://github.com/ytmytm/c128-theservant-sd2iec).
 
 ## Emulator Support
 
